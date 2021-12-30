@@ -1,0 +1,92 @@
+.frame{
+    text-align: center;
+    padding-top: 40px;
+}
+
+#paragraph{
+    padding-top: 50px; /* it has 50px from the top space of the paragraph */
+    padding-right: 100px; /* it has 100px from the right space of the paragraph*/
+    padding-left: 100px; /* it has 100px from the left space of the paragraph*/
+    font-size: 20px; /* font size sets the size of the font (here to 20px) */
+    line-height: 1.8; /* it sets the height of the line */
+    text-align: left; /* it takes the text to the left part of the screen */
+    text-indent: 50px; /* it has a similar use to tab */
+}
+
+
+#title1{
+    font-family: 'Dela Gothic One', cursive; /* font family lets you choose the font */
+    text-align: center; /* it takes the text to the center part of the screen */
+    font-size: 25px;
+    position: relative; /* elements change positions based on their normal positions*/
+    bottom: 35px; /* 35 px from the bottom id (title2) */
+}
+
+input{
+    background-image: linear-gradient(115deg, rgba(70, 172, 133, 0.932),rgb(130, 146, 167)); /* this changes the color of the boxes */    
+}
+
+.submitbutton{
+    font-size: 16px;
+}
+
+.submitbutton:hover{ /* when button is hovering it takes the background colour */
+    border: none;
+    background: rgb(192, 173, 173);
+}
+
+.split{
+    width: 50%; /* The size of the left and right part of the display*/
+    position: relative;
+}
+
+.left{
+    left: 32%;
+}
+  
+.right{
+    left: 50%;
+    bottom: 40px;
+}
+
+#words{
+    text-align: center;
+}
+
+#message{
+    text-align: center;
+}
+
+#button{
+    position: absolute;
+    left: 50%;
+    color: rgb(168, 29, 29);
+    font-size: 16px;
+  }
+
+/* the code below is being enabled when the user's screen has max width 1780px. When an id or a class exists in both @media and regular code it 
+takes the code from the @media part if it has a max width of 1780px */
+@media only screen and (max-width: 1780px) {
+    #title1{
+        font-family: 'Dela Gothic One', cursive;
+        text-align: center;
+        font-size: 25px;
+        position: relative;
+        bottom: 5px;
+    }
+
+    .split{
+        width: 50%;
+        position: relative;
+    }
+    
+    .left{
+        left: 39%;
+        bottom: 20px;
+    }
+      
+    .right{
+        left: 40%;
+        top: 0px;
+    }
+}

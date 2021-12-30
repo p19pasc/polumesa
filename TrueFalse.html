@@ -1,0 +1,108 @@
+<!DOCTYPE html> <!-- it informs the browswer to expect html -->
+<html lang="en"> <!-- declare the language of the webpage-->
+
+<!-- head section includes page's properties and the necessary .css - .js files -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Σωστό-Λάθος</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="index.css"> <!-- the css for the menu navigation bar-->
+    <link rel="stylesheet" href="TrueFalse.css">
+    <script src="TrueFalse.js"></script>
+</head>
+<body> <!-- section that containes headings, paragraphs , hyperlinks -->
+    <nav><!-- navigation bar -->
+        <ul><!-- the links that display on the navigation bar -->
+            <li><h1 id="title">Quiz Πληροφορικής</h1></li>
+            <li><a href="index.html">Αρχική</a></li>
+            <li><a href="quiz1.html">Quiz1</a></li>
+            <li><a href="gap.html">Quiz2</a></li>
+            <li><a href="TrueFalse.html">Quiz3</a></li>
+            <li><a href="about.html">Σχετικά Με Εμάς</a></li>
+        </ul>   
+    </nav>
+    <br>
+    <div><center><h2 id="tittle">ΕΚΦΩΝΗΣΗ</h2></center></div> <!-- a title in the center of the screen-->
+    <br> <br>
+    <b><p id="quiz1audiocss" style="font-size: 21px;" >Ακούστε το ηχητικό για οδηγίες!</p></b>
+    <br>
+    <div class="audiofile"> <!-- a class to put audiofile -->
+        <audio controls>
+            <source src="TrueFalse.mp3" type="audio/mpeg"> <!-- the .mp3 file we use -->
+        </audio>
+    </class>
+    </div>
+    <!-- we use split screen to cut the display -->
+    <section>
+        <div class="split left">   <!-- the "left" refers to the left part-->
+            <img align="left" class="diagram1" src="1_.png" width="338.27411" height="571.4631"> <!-- class for image which is displayed on the left side
+                of the left part with the given width and size-->
+            <br> <br> <br> <br>
+            <div class="first_text"> <!-- we create a class which contains a text that can be processed in TrueFalse.css-->
+                <p>
+                Αλγόριθμος Άσκηση1<br>
+                Διάβασε α<br>
+                Αν α > 0 τότε<br>
+                &nbsp;  α <- α + 2<br>
+                Αλλιώς<br>
+                &nbsp; Διάβασε β<br>
+                &nbsp;  β <- β – 4<br>
+                &nbsp;  α <- α + 3<br>
+                Εμφάνισε β<br>
+                Τέλος_αν<br>
+                Εμφάνισε α<br>
+                Τέλος Άσκηση1
+                <br>
+                <br>
+                </p>
+                <!-- a box for the input answer-->
+                <div class="first_box"><input type="text" style="width: 32px; height:40px; font-size: 32px; text-align:center; color: white;"  name="input"></p></div>
+                <br>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="split right"> <!-- the "right" refers to the right part-->
+            <img align="left" class="diagram2" src="2_.png" width="503.25" height="563.25"> <!-- class for image which is displayed on the left side
+                of the right part with the given width and size-->
+            <br> <br> <br> <br>
+            <div class="second_text"> <!-- we create a class which contains a text that can be processed in TrueFalse.css-->
+                <p>
+                Αλγόριθμος Άσκηση2<br>
+                Διάβασε α,β<br>
+                i <- 10<br>
+                Όσο i > 1 και i <= 10 Επανάλαβε<br>
+                &nbsp; Αν i = 10 τότε<br>
+                &nbsp; &nbsp; Εμφάνισε α<br>
+                &nbsp; Τέλος_αν<br>
+                &nbsp; i <- i div 2<br>
+                Τέλος_Επανάληψης<br>
+                Αν α > i τότε<br>
+                &nbsp; Εμφάνισε "Το α > i"<br>
+                Τέλος_αν<br>
+                Τέλος Άσκηση2
+                <br>
+                <br>
+                </p>
+                 <!-- a box for the input answer with css commands for its decoration-->
+                <div class="second_box"><input type="text" style="width: 32px; height:40px; font-size: 32px; text-align:center; color: white;"  name="input"></p></div>
+                <br>
+            </div>
+        </div>
+    </section>
+    <!-- div id="disappear" and div id="center" are responsible for the Submit - Repeat buttons and the displayed message -->
+    <div id="disappear">
+        <div id="center">
+         <button id="button" onclick="submit()">Submit</button><!--we create a class that creates a button and we give an id useful 
+            in the css code. onclick="submit()" is a function in javascript that is being called when user clicks the button  -->
+        </div>
+    </div>
+    </br>
+    <div id="center">
+        <!-- These ids are useful in javascript-->
+        <p id="message"></p><!-- id="message" displays a message when submit button is pressed -->
+        <p id="reload"></p><!-- id="reload" reloads the page by clicking the Repeat button-->
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>  <!-- it informs the browswer to expect html -->
+<html lang="en"> <!-- declare the language of the webpage-->
+
+<!-- head section includes page's properties and the necessary .css - .js files -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Σχετικά Με Εμάς</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="index.css"> <!-- the css for the menu navigation bar-->
+    <link rel="stylesheet" href="about.css">
+</head>
+<body><!-- section that containes headings, paragraphs , hyperlinks -->
+    <nav> <!-- navigation bar --> 
+        <ul><!-- the links that display on the navigation bar -->
+            <li><h1 id="title">Quiz Πληροφορικής</h1></li>
+            <li><a href="index.html">Αρχική</a></li>
+            <li><a href="quiz1.html">Quiz1</a></li>
+            <li><a href="gap.html">Quiz2</a></li>
+            <li><a href="TrueFalse.html">Quiz3</a></li>
+            <li><a href="about.html">Σχετικά Με Εμάς</a></li>
+        </ul>   
+    </nav>
+    <section> <!-- it contains the content of the about page except from the navigation bar-->
+        <br> <br> <br>
+        <h2>Λίγα πράγματα για εμάς!</h2>
+        <br> <br>
+    
+        <h3>Η ιστοσελίδα αυτή δημιουργήθηκε ως εργασία του μαθήματος Πολυμέσα, του Ιονίου Πανεπιστημίου!</h3>
+        <br>
+        <section class="split"> <!-- we have a section that contains the left and the right part of the split -->
+            <div id="leftpart">  <!-- the "leftpart" refers to the left part-->
+                <h3>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<u>Αιμίλιος Παυλίδης</h3></u>
+                <img align="left" class="img-aimilios" src="emilios.jpg" width="400" height="225">  <!-- class for image which is displayed on the left side
+                    of the left part with the given width and size-->
+                <br>
+                <p style="text-align: justify">&nbsp &nbsp Γεννήθηκα στη Θεσσαλονίκη και από πολύ μικρή ηλικία μόλις 5 ετών ξεκίνησα να ασχολούμαι με τον υπολογιστή. Ο λόγος ήταν η μεγάλη αγάπη που είχε ο πατέρας μου για αγωνιστικά παιχνίδια. Η ζωή σε μία μεγαλούπολη αποδείχτηκε πως δεν ταίριαζε στον χαρακτήρα μου, με αποτελέσμα όταν ήρθε η ώρα της δήλωσης σχολών στις πανελλήνιες να διαλέξω μικρές πόλεις.
+                Η επιλογή της Κέρκυρας αποδείχτηκε σοφή, αφού οι ρυθμοί της περιοχής ταιριάζουν με τους δικούς μου και η αρχιτεκτονική της πόλης μου δημιουργεί θετικά συναισθήματα. Βασικός στόχος για τη μετέπειτα ζωή μου είναι να εμπνεύσω τον κόσμο να παίρνει περισσότερες πρωτοβουλίες και να μην αφήνεται στα χέρια της τύχης. 
+                </p>
+            </div>
+            <div id="rightpart"> <!-- the "rightpart" refers to the right part-->
+                <h3>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<u>Θωμάς Σπυρίδων Πασχάλης</h3></u>
+                <img align="left" class="img-thomas" src="thomas.jpg" width="223.714285714" height="313.714285714"> <!-- class for image which is displayed on the left side
+                    of the right part with the given width and size-->
+                <br>
+                <p style="text-align: justify">&nbsp &nbsp Ο τόπος στον οποίο γεννήθηκα, όπου έως και σήμερα φοιτώ στην τριτοβάθμια εκπαίδευση είναι η Κέρκυρα. Με αφετηρία την ενασχόληση με τα ηλεκτρονικά παιχνίδια σε συσκευές όπως PSP και Playstation σε πολύ μικρή ηλικία κατέληξα στην χρήση του υπολογιστή. Από την στιγμή που ξεκίνησα να το χρησιμοποιώ έχοντας μηδαμηνές γνώσεις για το συγκεκριμένο εργαλείο και προσπαθώντας
+                    να εγκαταστήσω παιχνίδια και ταινίες δωρεάν, το ενδιαφέρον μου αυξανόταν ολοένα και περισσότερο. Μεγαλώνοντας και βλέποντας ότι το διαδίκτυο και ο υπολογιστής αποτελούν ένα νέο κόσμο που θα έχει καθοριστικό ρόλο στη ζωή των ανθρώπων, σκεφτόμουν πόσο χρήσιμο θα ήταν κάποιος να κατέχει τέτοιου είδους γνώσεις. Έτσι αποφάσισα να ακολουθήσω τον τομέα της πληροφορικής.</p>
+            </div>
+        </section>
+        <br>
+        <!-- the code above has a title in the center of the screen and under the title an embedded youtube video -->
+        <h3 align="center"><u>Το Βίντεο μας!</h3></u> 
+        <div> <!--here we embedded a youtube video-->
+            <!-- with the id we can add a border around the window of the video in css-->
+            <center><iframe id="video-yt" width="560" height="315" src="https://www.youtube.com/embed/2iNRp6XNAw8?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,109 @@
+
+<!DOCTYPE html> <!-- it informs the browswer to expect html -->
+<html lang="en"> <!-- declare the language of the webpage-->
+
+ <!-- head section includes page's properties and the necessary .css - .js files -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"> <!-- the css for the menu navigation bar-->
+    <link rel="stylesheet" href="quiz1.css">  
+    <script type="text/javascript" src="quiz1.js"></script> 
+    <title>Πολλαπλής επιλογής</title> <!-- Title of the webpage -->
+</head>
+    
+<body> <!-- section that containes headings, paragraphs , hyperlinks -->
+    <nav> <!-- navigation bar -->
+        <ul> <!-- the links that display on the navigation bar -->
+            <li><h1 id="title">Quiz Πληροφορικής</h1></li>
+            <li><a href="index.html">Αρχική</a></li>
+            <li><a href="quiz1.html">Quiz1</a></li>
+            <li><a href="gap.html">Quiz2</a></li>
+            <li><a href="TrueFalse.html">Quiz3</a></li>
+            <li><a href="about.html">Σχετικά Με Εμάς</a></li>
+        </ul>   
+    </nav>
+    <br> <br>
+    <b><p id="quiz1audiocss">Ακούστε το ηχητικό για οδηγίες!</p></b> <!-- <b> refers to bold text, id gives a unique id to 
+        the paragraph which can be decorated in css-->
+     <br>
+    <div class="audiofile"> <!-- a class to put audiofile -->
+            <audio controls>
+                <source src="quiz1.mp3" type="audio/mpeg"> <!-- the .mp3 file we use -->
+            </audio>
+        </class>
+    </div>
+    <form name="quiz" id="quiz"> <!-- we define that in this section we will have input from the user(checkboxes)-->
+    <!-- we use split screen to cut the display -->
+        <div class="split left">   <!-- the "left" refers to the left part-->
+            <div> <!-- a block with the question and the answers of the quiz1-->
+                <p>Με ποια εντολή εισάγουμε τις μεταβλητές α και β;</p>
+                <!-- input type="radio" creates a small circle that will be filled when chosen -->
+                <!-- name="question1" specifies a name for the the specific type="radio" which will be useful in javascript in combination with the 
+                corresponding value -->
+                <p><input type="radio" name="question1" value="a">A. Εκτύπωσε α</p>
+                <p><input type="radio" name="question1" value="b">B. Διάβασε α</p>    
+                <p><input type="radio" name="question1" value="c">C. Διάβασε α,β</p>
+                <p><input type="radio" name="question1" value="d">D. Εμφάνησε α,β</p>
+                <br>
+            </div>
+            <div>
+                <p>Aν (Αmod2 = 1), τότε</p>
+                <p><input type="radio" name="question2" value="a">A. o Α είναι περιττός</p>
+                <p><input type="radio" name="question2" value="b">B. ο Α διαιρείται με το 2 και αφήνει υπόλοιπο 0</p>
+                <p><input type="radio" name="question2" value="c">C. ο Α διαιρείται με το 2 και αφήνει υπόλοιπο 1</p>
+                <p><input type="radio" name="question2" value="d">D. οι απαντήσεις α και γ είναι σωστές</p>
+                <br>
+            </div>
+            <div>
+                <p>Στην δομή επανάληψης "Για i από 1 μέχρι 10", ποια θα είναι η τελική τιμή του i; </p>
+                <p><input type="radio" name="question3" value="a">A. i = 9</p>
+                <p><input type="radio" name="question3" value="b">B. i = 10</p>    
+                <p><input type="radio" name="question3" value="c">C. i = 11</p>
+                <p><input type="radio" name="question3" value="d">D. i = 12</p>
+                <br>
+            </div>
+        </div>
+        <div class="split right"><!-- the "right" refers to the right part-->
+            <div>
+                <p>Σε ποια από τις παρακάτω περιπώσεις συναντάμε τον καθολικό τύπο μεταβλητής;</p>
+                <p><input type="radio" name="question4" value="a">A. Απεριόριστη εμβέλεια</p>
+                <p><input type="radio" name="question4" value="b">B. Μερικώς απεριόριστη εμβέλεια</p>    
+                <p><input type="radio" name="question4" value="c">C. Περιορισμένη εμβέλεια</p>
+                <p><input type="radio" name="question4" value="d">D. Μερικώς περιορισμένη εμβέλεια</p>
+                <br>
+            </div>
+            <div>
+                <p>Ο δομημένος προγραμματισμός στηρίζεται στη χρήση</p>
+                <p> <input type="radio" name="question5" value="a">A. Δομής ακολουθίας</p>
+                <p><input type="radio" name="question5" value="b">B. Δομής επιλογής</p>    
+                <p><input type="radio" name="question5" value="c">C. Δομής επανάληψης</p>
+                <p><input type="radio" name="question5" value="d">D. Οι απαντήσεις α,β και γ είναι σωστές</p>
+                <br>
+            </div>
+            <div>
+                <p>Ποια από τα παρακάτω προβλήματα δεν επιδέχονται λύση; </p>
+                <p><input type="radio" name="question6" value="a">A. Επιλύσιμα</p>
+                <p><input type="radio" name="question6" value="b">B. Άλυτα</p>    
+                <p><input type="radio" name="question6" value="c">C. Ανοικτά</p>
+                <p><input type="radio" name="question6" value="d">D. Κανένα από τα παραπάνω</p>
+                <br>
+            </div>
+        </div>
+    </form>
+
+    <!-- div id="disappear" and div id="center" are responsible for the Submit - Repeat buttons and the displayed message -->
+    <div id="disappear">
+        <div id="center">
+            <button class="Submit" id="button" onclick="submit()">Submit</button> <!--we create a class that creates a button and we give an id useful 
+                in the css code. onclick="submit()" is a function in javascript that is being called when user clicks the button  -->
+        </div>
+    </div>
+    <div id="center">
+        <!-- These ids are useful in javascript-->
+        <p id="reload"></p><!-- id="reload" reloads the page by clicking the Repeat button-->
+        <p id="message"></p><!-- id="message" displays a message when submit button is pressed -->
+    </div>
+</body>
+</html>

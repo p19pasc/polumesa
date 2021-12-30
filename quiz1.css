@@ -1,0 +1,90 @@
+/* * sets all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.split {
+  width: 35%; /* The size of the left and right part of the display*/ 
+  position: fixed; /* elements stay in the same place even if the page is scrolled */
+}
+
+.left { 
+  /*left: 0; */
+  margin: 100px; /* create space on the top of the .left part*/
+  border-style: double; /* Style of .left border*/
+  border-color:rgb(175, 24, 24); /* colour of the border */
+}
+
+.right {
+  right: 0; /* puts the right part on the right side of the page*/
+  margin: 100px; /* create space on the top of the .right part*/
+  border-style: double; /* Style of .right border*/
+  border-color:rgb(175, 24, 24); /* colour of the border */
+}
+
+.audiofile{
+  text-align: center; /* sets the audiofile class in the center of the screen*/
+}
+
+#button{ 
+  position: absolute;  /* position relative to the nearest positioned ancestor*/
+  top: 50%; /* 50% down from the top of the page*/
+  left: 50%; /* 50% up from the left of the page*/
+  color: rgb(168, 29, 29);
+  font-size: 16px; 
+}
+
+#button:hover{ /* when button is hovering it takes the background colour*/
+  border: none;
+  background: rgb(192, 173, 173);
+}
+
+#message{ 
+  position: absolute; /* position relative to the nearest positioned ancestor*/
+  top: 54%; /* 54% down from the top of the page*/
+  left: 45.25%; /* 45.25% right from the left of the page*/
+}
+
+#quiz1audiocss{ 
+  text-align: center; /* put the audio title in the center of the page */
+  font-size: 21px;
+}
+
+/* the code below is being enabled when the user's screen has max width 700px. When an id or a class exists in both @media and regular code it 
+takes the code from the @media part if it has a max width of 700px */
+@media only screen and (max-width: 700px) {  
+  .split {
+    width: 55%;
+    position: relative;
+  }
+
+  .left {
+    
+    border-style: double;
+    border-color:rgb(175, 24, 24);
+  }
+  
+  .right {
+    border-style: double;
+    border-color:rgb(175, 24, 24);
+  }
+  .audiofile{
+    position: relative;
+    text-align: center;
+    top: 60px;
+  }
+
+  #button{
+    position: relative;
+    left: 45%;
+    color: rgb(168, 29, 29);
+    font-size: 16px;
+  }
+
+  #message{
+    position: relative;
+    left: 28%;
+  }
+}

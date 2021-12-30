@@ -1,0 +1,121 @@
+/* * sets all elements */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#tittle{
+    text-align: center; /* it takes the text to the center part of the screen */
+}
+
+.audiofile{
+    text-align: center;
+}
+
+#quiz1audiocss{
+    text-align: center;
+}
+
+input{
+    background-image: linear-gradient(115deg, rgba(207, 116, 116, 0.932),rgb(228, 178, 105)); /* this changes the color of the True/False boxes */      
+}
+
+#button{
+    position: absolute; /* position relative to the nearest positioned ancestor */
+    top: 60%; /* 60% down from the top of the page */
+    left: 44%; /* 44% up from the left of the page */
+    color: rgb(168, 29, 29); /* the text color of the button */
+    background:#b7f088; /* the background color of the Submit button */
+    font-size: 16px; /* font size sets the size of the font (here to 16px) */
+  }
+  
+  #button:hover{ /* when button is hovering it takes the background colour */
+    border: none;
+    background: rgb(192, 173, 173);
+  }
+
+#message{
+    position: absolute; /* position relative to the nearest positioned ancestor */
+    top: 63.5%; /* 63.5% down from the top of the page */
+    left: 42.4%; /* 42.4% up from the left of the page */
+}
+
+.first_text{
+    position: relative; /* elements change positions based on their normal positions */
+    left: 50px;
+    top: 40px;
+}
+
+section{
+    position:relative;
+    top: 80px;
+}
+
+.first_box{
+    position: relative;
+    left: 28px;
+}
+
+.split{
+    width: 47%; /* The size of the left and right part of the display */
+    position: fixed; /* elements stay in the same place even if the page is scrolled */
+}
+
+.left{
+    left: 10%;
+}
+  
+.right{
+    right: 0%;
+    left: 55%;
+}
+
+.second_text{
+    position: relative;
+    left: 50px;
+    top: 40px;
+}
+
+.second_box{
+    position: relative;
+    left: 28px;
+}
+
+/* the code below is being enabled when the user's screen has max width 1800px. When an id or a class exists in both @media and regular code it 
+takes the code from the @media part if it has a max width of 1800px */
+@media only screen and (max-width: 1800px) {
+    .split{
+        width: 45%;
+        position: absolute;
+    }
+    
+    .left{
+        left: 3%;
+    }
+      
+    .right{
+        right: 0%;
+        left: 49%;
+    }
+  
+    #button{
+        position: absolute;
+        top: 70%;
+        left: 43%;
+        color: rgb(168, 29, 29);
+        background:#b7f088;
+        font-size: 16px;
+    }
+
+    section{
+        position: relative;
+        top: 30px;
+    }
+
+    #message{
+        position: absolute;
+        top: 75%;
+        left: 40.75%;
+    }
+}

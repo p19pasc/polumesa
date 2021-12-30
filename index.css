@@ -1,0 +1,56 @@
+/* this css code is used as the top menu (navigation bar) and is being imported in every .html file. */
+
+/* * sets all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100%; /* The size of the left and right part of the display*/
+    height: 100px; /* It makes the nav bar 100 px from the top of the page*/
+    background-color: rgba(105,224,90,0.55);
+    ;
+}
+
+#title{
+    text-align: left;
+    padding: 1rem 20px; /* it creates space around the id */
+    font-size: 2rem; /* font size sets the size of the font */ 
+    color: rgb(49,70,7);
+    font-family: Georgia, 'Times New Roman', Times, serif; /* font family lets you choose the font */
+
+}
+ul li {
+    list-style: none;
+    display: inline-block; /* it makes the menu be in a horizontal line */
+    line-height: 60px; /* takes the line 60px down from the top of the page */
+}
+
+ul li a {
+    display: block;
+    text-decoration:none;
+    font-size: 14px;
+    font-family: arial; /* font family lets you choose the font */
+    color: rgb(175, 24, 24);
+    padding: 0 20px; /* it creates space around the id */
+}
+
+ul li a:hover { /* when button is hovering it takes the background colour */
+    color: rgb(255, 255, 255);
+}
+
+body{
+    background-image: linear-gradient(115deg, rgba(70, 172, 133, 0.932),rgb(130, 146, 167)),url(ionio.jpg); /* Image and color of the background */
+    height: 100vh;
+}
+
+p{
+    font-size: 17px;
+    padding: 0 20px;
+    text-align: justify; /* it makes the text aligned evenly along both the left and right */
+}
+
+.img-ionio{
+    padding: 70px;
+}

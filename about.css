@@ -1,0 +1,26 @@
+/* * sets all elements */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.img-aimilios{
+    padding: 20px; /* it creates space around the id */
+}
+
+.img-thomas{
+    padding: 20px;
+    margin: auto 30px; /* It moves the picture to the right within its container */
+    float: left; /* The element is positioned to the left of its container */
+}
+
+.split{
+    display: flex; /* it helps for the correct layout of the about page */
+}
+
+#video-yt{
+    border-style: inset; /* Style of #video-yt border */
+    border-width: 7px; /* Width of the border */
+    border-color: rgb(160, 14, 14); /* Color of the border */
+}
