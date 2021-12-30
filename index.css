@@ -41,7 +41,7 @@ ul li a:hover { /* when button is hovering it takes the background colour */
 }
 
 body{
-    background-image: linear-gradient(115deg, rgba(70, 172, 133, 0.932),rgb(130, 146, 167)),url(ionio.jpg); /* Image and color of the background */
+    background-image: linear-gradient(115deg, rgba(70, 172, 133, 0.932),rgb(130, 146, 167)),url(images_mp3/ionio.jpg); /* Image and color of the background */
     height: 100vh;
 }
 
