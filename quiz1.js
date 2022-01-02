@@ -52,7 +52,7 @@ function submit(){
     {
         flag = true;
     }
-    if (q6=="b"){
+    if (answer6=="b"){
         c++;
     }
     else if(answer6=="a" || answer6=="d" || answer6=="c")
