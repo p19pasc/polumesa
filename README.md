@@ -8,5 +8,5 @@ is necessary to be given. Just download all the code files and the folder which 
 Then use a program to open them in order to see the code and find an extension to convert these files into a website. In our case we used **Visual Studio Code** with the extension **Live Server**. 
 
 ## The result
-The whole project has been made with the support of Aimilios Pavlidis(https://github.com/AimiliosPavlidis2001) who is shown in tab "About us".<br>
+The whole project has been made with the support of [Aimilios Pavlidis](https://github.com/AimiliosPavlidis2001) who is shown in tab "About us".<br>
 **Link of website:** https://quiz-pliroforikis.netlify.app/
